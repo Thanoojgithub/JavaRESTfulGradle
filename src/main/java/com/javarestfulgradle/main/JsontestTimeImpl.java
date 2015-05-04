@@ -29,9 +29,9 @@ public class JsontestTimeImpl implements IJsontestTime{
 			WebClient client = WebClient.create("http://time.jsontest.com/", providers).type("application/json");
 			String jsonStr = client.get(String.class);
 			jsontestTime = mapper.readValue(jsonStr, JsontestTime.class);
-			System.out.println("########################################");
-			System.out.println("\nDate & Time :: " + ToStringBuilder.reflectionToString(jsontestTime, RecursiveToStringStyle.JSON_STYLE));
-			System.out.println("\n########################################");
+			logger.info("########################################");
+			logger.info("\nDate & Time :: " + ToStringBuilder.reflectionToString(jsontestTime, RecursiveToStringStyle.JSON_STYLE));
+			logger.info("\n########################################");
 			logger.info("getJsontestTime method call end");
 		} catch (IOException e1) {
 			e1.printStackTrace();
