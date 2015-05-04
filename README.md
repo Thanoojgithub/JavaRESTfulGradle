@@ -1,4 +1,4 @@
-# WeatherReporterORJsontestTime
+# JavaRESTfulGradle
 WeatherReporter OR JsontestTime, uisng RESTful and Gradle
 
 
