@@ -1,4 +1,4 @@
-package com.weatherreport.vo;
+package com.javarestfulgradle.vo;
 
 import java.io.Serializable;
 
